@@ -1,0 +1,27 @@
+nav {
+  background: #1c3146;
+  height: 100%;
+
+  ul {
+    list-style-type: none;
+    padding: 40px 0 0 0;
+    margin: 0;
+
+    li {
+
+      a {
+        color: #fff;
+        padding: 20px;
+        display: block;
+
+        >:hover {
+          color: #071d34;
+        }
+      }
+
+      .activated {
+        background-color: #071d34;
+      }
+    }
+  }
+}

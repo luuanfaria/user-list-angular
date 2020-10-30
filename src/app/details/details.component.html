@@ -1,0 +1,14 @@
+<div *ngIf="user$">
+  <h1>{{ user$.name }}</h1>
+
+  <ul>
+    <li><strong>Telefone:</strong> {{ user$.phone }}</li>
+    <li><strong>Site:</strong> {{ user$.website }}</li>
+    <li><strong>Empresa:</strong> {{ user$.company.name }}</li>
+  </ul>
+
+
+
+  <img src="`http://maps.googleapis.com/maps/api/staticmap?center={{ user$.address.lat }},{{ user$.address.lng }}
+  &zoom=15&markers=color:red|{{ user$.address.lat }},{{ user$.address.lng }}&size=250x250`">
+</div>
